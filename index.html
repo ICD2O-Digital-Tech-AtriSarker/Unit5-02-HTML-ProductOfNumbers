@@ -4,7 +4,7 @@
 <head>
   <!-- Meta data section -->
   <meta charset="utf-8">
-  <meta name="description" content="{desc}, Using Javascript">
+  <meta name="description" content="Calculator for product of 2 numbers, Using Javascript">
   <meta name="keywords" content="immaculata, icd2o">
   <meta name="author" content="Atri Sarker">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +24,7 @@
   <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
   <!-- Title -->
-  <title>{title} in JS</title>
+  <title>Product of Numbers in JS</title>
 </head>
 
 <body>
@@ -33,7 +33,7 @@
   <script defer src="./js/script.js"></script>
 
   <!-- Header -->
-  <h1>{title} in JS</h1>
+  <h1>Product of Numbers in JS</h1>
 
   <!-- INPUT FORM [used for form validation] -->
   <form id="inputForm">
@@ -41,14 +41,20 @@
     <table>
       <tr>
         <td>
-          <!--  {value} Input -->
-          <label for="{value}Input">{value}:</label>
-          <input id="{value}Input" type="number" name="{value}" value="" step="0.01" min="" max="" />
+          <!--  number Input -->
+          <label for="numInput">Enter Number:</label>
+          <input id="numInput" type="number" name="userNum" value="" step="0.01" min="" max="" />
+          <br>
+          <br>
+          <!--  integer Input [ only Integers ] -->
+          <label for="intInput">Enter Integer:</label>
+          <input id="intInput" type="number" name="userInt" value="" step="1" min="" max="" />
+
           <br>
         </td>
         <td>
           <!-- Image of JS LOGO -->
-          <img class="contentImg" src="./images/jsLogo.png" alt="javascript Logo!">
+          <img class="contentImg" src="./images/jsLogo.svg" alt="javascript Logo!">
           <br>
         </td>
       </tr>
